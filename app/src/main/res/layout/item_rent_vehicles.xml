@@ -1,74 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.android.carrentalapp.roundview.RoundConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/tv_vehiclename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_vehiclemodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="model"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_vehiclename" />
 
     <ImageView
         android:id="@+id/iv_itemimage"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_vehiclemodel"
         tools:layout_editor_absoluteX="10dp" />
 
     <LinearLayout
-        android:id="@+id/ll_vehicledetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/iv_itemimage"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="10dp">
+        android:layout_width="201dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_itemimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_itemimage"
+        app:layout_constraintTop_toTopOf="@+id/iv_itemimage"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
         <TextView
-            android:id="@+id/tv_carname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vehicle Name"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            android:text="⚙️transmission"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💺 seater"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⛽️fuel"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⛽️full tank to full tank"
+            android:layout_margin="10dp"
             />
 
-        <TextView
-            android:id="@+id/tv_carvarient"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Varient"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginLeft="10dp"/>
+
     </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/tv_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Price"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        app:layout_constraintTop_toBottomOf="@id/ll_vehicledetails"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-    <TextView
-        android:id="@+id/tv_savetext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="save"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:textSize="11dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        app:layout_constraintTop_toBottomOf="@id/iv_itemimage"
-        app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/black_saved_border"
-        android:paddingVertical="1dp"
-        android:paddingHorizontal="10dp"
-        android:gravity="center"/>
 
     <TextView
         android:id="@+id/tv_availabilitytext"
@@ -76,14 +84,23 @@
         android:layout_height="wrap_content"
         android:text="availability text"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="11dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_savetext"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:gravity="center"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="#99B898"
+        android:text="Book this car"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/iv_itemimage"
+        tools:layout_editor_absoluteX="5dp"
+        android:textColor="@color/white"/>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.android.carrentalapp.roundview.RoundConstraintLayout>

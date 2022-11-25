@@ -1,3 +1,122 @@
 <resources>
     <string name="app_name">Car Rental App</string>
+
+
+        <declare-styleable name="CircleProgress">
+            <attr name="cp_bg_color" format="reference" />
+            <attr name="cp_progress_color" format="reference" />
+            <attr name="cp_stroke_width" format="dimension" />
+            <attr name="cp_max" format="integer" />
+            <attr name="cp_text_color" format="reference" />
+            <attr name="cp_text_size" format="reference" />
+        </declare-styleable>
+
+        <attr name="uiCoreRvBackgroundColor" format="reference" />
+        <attr name="uiCoreRvBackgroundPressColor" format="reference" />
+        <attr name="uiCoreRvStrokeColor" format="reference" />
+        <attr name="uiCoreRvStrokePressColor" format="reference" />
+        <attr name="uiCoreRvTextPressColor" format="reference" />
+        <attr name="uiCoreRvStrokeWidth" format="dimension" />
+        <attr name="uiCoreRvCornerRadius" format="dimension" />
+        <attr name="uiCoreRvCornerRadiusTL" format="dimension" />
+        <attr name="uiCoreRvCornerRadiusTR" format="dimension" />
+        <attr name="uiCoreRvCornerRadiusBL" format="dimension" />
+        <attr name="uiCoreRvCornerRadiusBR" format="dimension" />
+        <attr name="uiCoreRvIsRadiusHalfHeight" format="boolean" />
+        <attr name="uiCoreRvIsWidthHeightEqual" format="boolean" />
+        <attr name="uiCoreRvIsRippleEnable" format="boolean" />
+
+        <declare-styleable name="RoundViewDelegate">
+            <attr name="uiCoreRvBackgroundColor" />
+            <attr name="uiCoreRvBackgroundPressColor" />
+            <attr name="uiCoreRvStrokeColor" />
+            <attr name="uiCoreRvStrokePressColor" />
+            <attr name="uiCoreRvTextPressColor" />
+            <attr name="uiCoreRvStrokeWidth" />
+            <attr name="uiCoreRvCornerRadius" />
+            <attr name="uiCoreRvCornerRadiusTL" />
+            <attr name="uiCoreRvCornerRadiusTR" />
+            <attr name="uiCoreRvCornerRadiusBL" />
+            <attr name="uiCoreRvCornerRadiusBR" />
+            <attr name="uiCoreRvIsRadiusHalfHeight" />
+            <attr name="uiCoreRvIsWidthHeightEqual" />
+            <attr name="uiCoreRvIsRippleEnable" />
+        </declare-styleable>
+        <declare-styleable name="RoundConstraintLayout">
+            <attr name="uiCoreRvBackgroundColor" />
+            <attr name="uiCoreRvBackgroundPressColor" />
+            <attr name="uiCoreRvStrokeColor" />
+            <attr name="uiCoreRvStrokePressColor" />
+            <attr name="uiCoreRvStrokeWidth" />
+            <attr name="uiCoreRvCornerRadius" />
+            <attr name="uiCoreRvCornerRadiusTL" />
+            <attr name="uiCoreRvCornerRadiusTR" />
+            <attr name="uiCoreRvCornerRadiusBL" />
+            <attr name="uiCoreRvCornerRadiusBR" />
+            <attr name="uiCoreRvIsRadiusHalfHeight" />
+            <attr name="uiCoreRvIsWidthHeightEqual" />
+            <attr name="uiCoreRvIsRippleEnable" />
+        </declare-styleable>
+        <declare-styleable name="RoundLinearLayout">
+            <attr name="uiCoreRvBackgroundColor" />
+            <attr name="uiCoreRvBackgroundPressColor" />
+            <attr name="uiCoreRvStrokeColor" />
+            <attr name="uiCoreRvStrokePressColor" />
+            <attr name="uiCoreRvStrokeWidth" />
+            <attr name="uiCoreRvCornerRadius" />
+            <attr name="uiCoreRvCornerRadiusTL" />
+            <attr name="uiCoreRvCornerRadiusTR" />
+            <attr name="uiCoreRvCornerRadiusBL" />
+            <attr name="uiCoreRvCornerRadiusBR" />
+            <attr name="uiCoreRvIsRadiusHalfHeight" />
+            <attr name="uiCoreRvIsWidthHeightEqual" />
+            <attr name="uiCoreRvIsRippleEnable" />
+        </declare-styleable>
+        <declare-styleable name="RoundRelativeLayout">
+            <attr name="uiCoreRvBackgroundColor" />
+            <attr name="uiCoreRvBackgroundPressColor" />
+            <attr name="uiCoreRvStrokeColor" />
+            <attr name="uiCoreRvStrokePressColor" />
+            <attr name="uiCoreRvStrokeWidth" />
+            <attr name="uiCoreRvCornerRadius" />
+            <attr name="uiCoreRvCornerRadiusTL" />
+            <attr name="uiCoreRvCornerRadiusTR" />
+            <attr name="uiCoreRvCornerRadiusBL" />
+            <attr name="uiCoreRvCornerRadiusBR" />
+            <attr name="uiCoreRvIsRadiusHalfHeight" />
+            <attr name="uiCoreRvIsWidthHeightEqual" />
+            <attr name="uiCoreRvIsRippleEnable" />
+        </declare-styleable>
+        <declare-styleable name="RoundFrameLayout">
+            <attr name="uiCoreRvBackgroundColor" />
+            <attr name="uiCoreRvBackgroundPressColor" />
+            <attr name="uiCoreRvStrokeColor" />
+            <attr name="uiCoreRvStrokePressColor" />
+            <attr name="uiCoreRvStrokeWidth" />
+            <attr name="uiCoreRvCornerRadius" />
+            <attr name="uiCoreRvCornerRadiusTL" />
+            <attr name="uiCoreRvCornerRadiusTR" />
+            <attr name="uiCoreRvCornerRadiusBL" />
+            <attr name="uiCoreRvCornerRadiusBR" />
+            <attr name="uiCoreRvIsRadiusHalfHeight" />
+            <attr name="uiCoreRvIsWidthHeightEqual" />
+            <attr name="uiCoreRvIsRippleEnable" />
+        </declare-styleable>
+        <declare-styleable name="RoundTextView">
+            <attr name="uiCoreRvBackgroundColor" />
+            <attr name="uiCoreRvBackgroundPressColor" />
+            <attr name="uiCoreRvStrokeColor" />
+            <attr name="uiCoreRvStrokePressColor" />
+            <attr name="uiCoreRvTextPressColor" />
+            <attr name="uiCoreRvStrokeWidth" />
+            <attr name="uiCoreRvCornerRadius" />
+            <attr name="uiCoreRvCornerRadiusTL" />
+            <attr name="uiCoreRvCornerRadiusTR" />
+            <attr name="uiCoreRvCornerRadiusBL" />
+            <attr name="uiCoreRvCornerRadiusBR" />
+            <attr name="uiCoreRvIsRadiusHalfHeight" />
+            <attr name="uiCoreRvIsWidthHeightEqual" />
+            <attr name="uiCoreRvIsRippleEnable" />
+        </declare-styleable>
+
 </resources>
